@@ -1,0 +1,19 @@
+{
+  "name": "game-snake",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "clean": "rm -rf node_modules/ dist/",
+    "clear": "rm -rf dist/",
+    "serve": "http-server dist/"
+  },
+  "devDependencies": {
+    "http-server": "^13.0.0",
+    "ts-loader": "^8.1.0",
+    "typescript": "^4.2.3",
+    "webpack": "^5.30.0",
+    "webpack-cli": "^4.6.0"
+  }
+}

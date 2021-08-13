@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  overflow: hidden
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-family: 'Courier New', Courier, monospace;
+  user-select: none;
+  background-color: rgb(64, 64, 64);
+}
+
+#game-container {
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.game-canvas {
+  width: 100%;
+}
+
+.game-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.game-score {
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  background-color: lightgray;
+  color: black;
+}
+
+.game-controller {
+  margin: 60px;
+  border: solid 1px black;
+  transform: rotate(45deg);
+}
+
+.game-controller-input {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  color: white;
+  border: solid 1px black;
+  background-color: gray;
+}
+
+.game-controller-input > span {
+  transform: rotate(-45deg);
+}
+
+.game-over {
+  padding: 25px;
+  position: absolute;
+  color: white;
+  background-color: black;
+  border: solid 2px white;
+  border-radius: 10px;
+}
+
+.game-over > span {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-content: center;
+  align-items: center;
+}
