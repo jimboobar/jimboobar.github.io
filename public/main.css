@@ -3,17 +3,19 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   width: 100%;
-  overflow: hidden
+  overflow: hidden;
 }
 
 body {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   user-select: none;
+  -webkit-user-select: none;
   background-color: rgb(64, 64, 64);
 }
 
