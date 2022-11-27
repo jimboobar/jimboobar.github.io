@@ -4,16 +4,30 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "build": "webpack",
+    "build:site:app": "webpack --config webpack.site.app.ts --mode=production --env production --progress",
+    "build:site:background": "webpack --config webpack.site.background.ts --mode=production --env production --progress",
+    "build:game:snake": "webpack --config webpack.game.snake.ts --mode=production --env production --progress",
     "clean": "rm -rf node_modules/ dist/",
     "clear": "rm -rf dist/",
     "serve": "http-server dist/"
   },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.3",
+    "three": "^0.146.0"
+  },
   "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.0",
+    "@types/three": "^0.146.0",
     "http-server": "^13.0.0",
-    "ts-loader": "^8.1.0",
+    "ts-loader": "^9.4.1",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths-webpack-plugin": "^4.0.0",
     "typescript": "^4.2.3",
-    "webpack": "^5.30.0",
-    "webpack-cli": "^4.6.0"
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.0"
   }
 }

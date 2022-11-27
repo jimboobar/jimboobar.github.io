@@ -22,7 +22,7 @@ const apple = new Apple(tiles);
 const score = new Score(snake, apple);
 const overlay = new Overlay();
 const gameOver = new GameOver(overlay, score);
-const gameController = new GameController(snake);
+const gameController = new GameController();
 
 container.append(score.html);
 container.append(game.html);

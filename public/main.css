@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 html,
 body {
   width: 100%;
@@ -13,104 +8,119 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Arial, "Courier New", Courier, monospace;
   user-select: none;
   -webkit-user-select: none;
-  background-color: rgb(64, 64, 64);
+  background-color: #666;
 }
 
-#game-container {
-  max-width: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+p {
+  margin: 0.75em;
 }
 
-.game-canvas {
-  width: 100%;
-}
-
-.game-overlay {
+#app-background {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.75);
 }
 
-.game-score {
-  width: 100%;
-  padding: 5px 0;
-  text-align: center;
-  background-color: lightgray;
-  color: black;
-}
-
-.game-controller {
-  margin: 60px;
-  border: solid 1px black;
-  transform: rotate(45deg);
-}
-
-.game-controller-input {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 100px;
-  color: white;
-  border: solid 1px black;
-  background-color: gray;
-}
-
-.game-controller-input > span {
-  transform: rotate(-45deg);
-}
-
-.game-over {
-  padding: 25px;
+#app-root {
   position: absolute;
-  color: white;
-  background-color: black;
-  border: solid 2px white;
-  border-radius: 10px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: scroll;
 }
-
-.game-over > span {
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.hidden {
-  visibility: hidden;
-}
-
-.flex {
-  display: flex;
-}
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.flex-column {
+.app-layout {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.justify-center {
+.app-menu {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-menu-header {
+  display: flex;
   justify-content: center;
+  padding: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: xx-large;
+  color: white;
+  text-shadow: 0px 0px 5px #666;
 }
 
-.justify-space-between {
-  justify-content: space-between;
+.app-menu-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px 0;
+  background-color: #ddd;
 }
 
-.align-center {
-  align-content: center;
+.app-menu-link {
+  padding: 10px;
+  margin: 0 5px;
+  text-decoration-line: none;
+  color: #666;
+  background-color: #ddd;
+  border-radius: 1em;
+}
+
+.app-menu-link:hover {
+  color: #111;
+  background-color: #bbb;
+}
+
+.app-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  color: white;
+}
+
+.app-page > h1 {
+  margin: 1em 0;
+  text-shadow: 0.2em 0.2em #333;
+}
+
+.app-page > div {
+  margin-bottom: 1em;
+  padding: 1em;
+  width: 100%;
+  max-width: 800px;
+  color: #666;
+  background-color: white;
+  border-radius: 1em;
+  box-shadow: 0.25em 0.25em 0.25em #333;
+}
+
+.app-game-card {
+  padding: 1em;
+  width: 600px;
+  color: black;
+  background-color: white;
+  border-radius: 1em;
+  box-shadow: 0.25em 0.25em 0.25em #333;
+}
+
+.app-game-card:hover {
+  background-color: rgb(222, 255, 222);
+}
+
+.app-game-card > h2 {
+  margin: 0.75em 0;
+}
+
+.app-game-card > p {
+  margin: 0.5em 0;
 }
