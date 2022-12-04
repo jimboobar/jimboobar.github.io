@@ -14,6 +14,10 @@ body {
   background-color: #666;
 }
 
+h2 {
+  margin: 0.5em;
+}
+
 p {
   margin: 0.75em;
 }
@@ -95,32 +99,10 @@ p {
 
 .app-page > div {
   margin-bottom: 1em;
-  padding: 1em;
   width: 100%;
   max-width: 800px;
   color: #666;
   background-color: white;
   border-radius: 1em;
   box-shadow: 0.25em 0.25em 0.25em #333;
-}
-
-.app-game-card {
-  padding: 1em;
-  width: 600px;
-  color: black;
-  background-color: white;
-  border-radius: 1em;
-  box-shadow: 0.25em 0.25em 0.25em #333;
-}
-
-.app-game-card:hover {
-  background-color: rgb(222, 255, 222);
-}
-
-.app-game-card > h2 {
-  margin: 0.75em 0;
-}
-
-.app-game-card > p {
-  margin: 0.5em 0;
 }
