@@ -7,7 +7,7 @@ import {
   SphereGeometry,
   WebGLRenderer,
 } from "three";
-import WebGL from "./utils/WebGL";
+import WebGL from "../../utils/WebGL";
 
 const container = document.getElementById("app-background");
 
