@@ -5,32 +5,28 @@ export const About = () => (
     <h1>About</h1>
     <div>
       <p>
-        I enjoy software architecture, engineering and development. It can be
-        anything from designing systems, platforms, product features or to just
-        write some useless code to throw away.
+        I'm just a guy who enjoys software architecture, engineering and
+        development.
       </p>
     </div>
     <div>
       <p>
-        Been programming in C, C++, C#, Java, Lua, Javascript, Typescript and
-        more. As each language has its strenghts and weaknesses, the
-        one-language-to-rule-them-all does not exist in my opinion.
-      </p>
-      <p>
-        I prefer to use programming languages that makes programming easy. That
-        includes syntax, tooling, build-steps and an active community.
+        I prefer programming languages that makes programming easy. That
+        includes syntax, tooling, build-steps and preferably an active
+        community.
       </p>
     </div>
     <div>
       <p>
-        The what, why and when are questions I ask myself when starting a new
-        project:
+        The what, why and when are questions I often ask myself:
         <ul>
-          <li>What is the purpose of what I'm about to do?</li>
+          <li>What is the purpose?</li>
+          <li>Has someone done it?</li>
           <li>Why should I do it?</li>
-          <li>When will it be done?</li>
+          <li>When will I be done?</li>
         </ul>
-        It helps me to identify a scope and how to manage my time on projects.
+        These bullets helps me to identify a scope and how to manage my time on
+        projects.
       </p>
     </div>
   </div>

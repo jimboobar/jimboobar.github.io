@@ -8,7 +8,7 @@ export const GitHub = () => (
         Curious about the projects I've done or that I'm working on? Then head
         to my public repositories on GitHub,{" "}
         <a href="https://github.com/jimboobar?tab=repositories">
-          https://github.com/jimboobar
+          https://github.com/jimboobar?tab=repositories
         </a>
         .
       </p>
