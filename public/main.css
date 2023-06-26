@@ -76,12 +76,11 @@ p {
   text-decoration-line: none;
   color: #666;
   background-color: #ddd;
-  border-radius: 1em;
 }
 
 .app-menu-link:hover {
   color: #111;
-  background-color: #bbb;
+  background-color: #ccc;
 }
 
 .app-page {
@@ -103,6 +102,6 @@ p {
   max-width: 800px;
   color: #666;
   background-color: white;
-  border-radius: 1em;
+  border-radius: 0.25em;
   box-shadow: 0.25em 0.25em 0.25em #333;
 }

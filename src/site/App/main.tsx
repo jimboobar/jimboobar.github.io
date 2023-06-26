@@ -1,8 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { HashRouter } from "react-router-dom";
-import { Routes, Route, Outlet, Link } from "react-router-dom";
-import { About } from "./pages/About";
+import { HashRouter, Link, Outlet, Route, Routes } from "react-router-dom";
 import { Games } from "./pages/Games";
 import { GitHub } from "./pages/GitHub";
 import { PageNotFound } from "./pages/PageNotFound";
@@ -14,9 +12,6 @@ const Menu = () => (
     <div className="app-menu-links">
       <Link className="app-menu-link" to="/">
         Start
-      </Link>
-      <Link className="app-menu-link" to="/about">
-        About
       </Link>
       <Link className="app-menu-link" to="/github">
         GitHub
@@ -41,7 +36,6 @@ ReactDOM.createRoot(document.getElementById("app-root")).render(
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Start />} />
-          <Route path="about" element={<About />} />
           <Route path="github" element={<GitHub />} />
           <Route path="games" element={<Games />} />
           <Route path="*" element={<PageNotFound />} />
